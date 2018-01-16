@@ -37,7 +37,7 @@ namespace Threading
 
         private static void ShowThreadStats(object obj)
         {
-            ThreadPool.SetMaxThreads(50, 100);
+            ThreadPool.SetMaxThreads(10, 100);
 
             while (true)
             {

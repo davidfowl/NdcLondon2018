@@ -20,7 +20,15 @@ namespace Threading.Controllers
         [HttpGet("/hello-sync-over-async")]
         public string HelloSyncOverAsync()
         {
-            Task.Delay(1000).Wait();
+            Task.Delay(2000).Wait();
+
+            return "Hello World";
+        }
+
+        [HttpGet("/hello-async-over-ssync")]
+        public async Task<string> HelloAsyncOverSync()
+        {
+            await Task.Run(() => Thread.Sleep(2000));
 
             return "Hello World";
         }
