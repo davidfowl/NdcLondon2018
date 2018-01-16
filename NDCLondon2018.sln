@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Talk1Samples", "Talk1Samples\Talk1Samples.csproj", "{CD2E850D-2F3F-4758-958C-BE56AB71B7CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Threading", "Threading\Threading.csproj", "{0353C7BE-428B-4ED6-8FEE-48AEECE99EC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Threading", "Threading\Threading.csproj", "{0353C7BE-428B-4ED6-8FEE-48AEECE99EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logging", "Logging\Logging.csproj", "{C75AC163-B099-43E8-A945-D2F57773BE98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{0353C7BE-428B-4ED6-8FEE-48AEECE99EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0353C7BE-428B-4ED6-8FEE-48AEECE99EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0353C7BE-428B-4ED6-8FEE-48AEECE99EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C75AC163-B099-43E8-A945-D2F57773BE98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C75AC163-B099-43E8-A945-D2F57773BE98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C75AC163-B099-43E8-A945-D2F57773BE98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C75AC163-B099-43E8-A945-D2F57773BE98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -20,11 +20,5 @@ namespace Talk1Samples
         {
             Thread.Sleep(TimeSpan.FromMinutes(3));
         }
-
-        [Route("/slow-async-over-async")]
-        public void SlowSyncOverAsync()
-        {
-            Task.Delay(TimeSpan.FromMinutes(3)).Wait();
-        }
     }
 }
