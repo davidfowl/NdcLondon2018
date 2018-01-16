@@ -20,6 +20,11 @@ namespace Talk1Samples
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseStartup<Startup>()
+                .ConfigureLogging(logging =>
+                {
+                    logging.SetMinimumLevel(LogLevel.Error);
+                })
+                .UseUrls("http://*:5067")
                 .Build();
     }
 }
