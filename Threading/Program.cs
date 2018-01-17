@@ -45,7 +45,7 @@ namespace Threading
                 ThreadPool.GetMinThreads(out var minThreads, out var _);
                 ThreadPool.GetMaxThreads(out var maxThreads, out var _);
 
-                Console.WriteLine($"Avail: {workerThreads}, Min: {minThreads}, Max: {maxThreads}, Req: {Requests}");
+                Console.WriteLine($"Avail: {workerThreads}, Active: {maxThreads - workerThreads}, Min: {minThreads}, Max: {maxThreads}, Req: {Requests}");
 
                 Thread.Sleep(1000);
             }

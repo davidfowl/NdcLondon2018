@@ -24,15 +24,6 @@ namespace Talk1Samples
             return _httpClient.GetStringAsync(_url);
         }
 
-        [Route("/big-content-stillbad")]
-        public async Task<string> BigContentBadAgain()
-        {
-            using (var response = await _httpClient.GetAsync(_url))
-            {
-                return await response.Content.ReadAsStringAsync();
-            }
-        }
-
         [Route("/big-content-good")]
         public Task<Stream> BigContentGood()
         {

@@ -25,7 +25,7 @@ namespace Threading.Controllers
             return "Hello World";
         }
 
-        [HttpGet("/hello-async-over-ssync")]
+        [HttpGet("/hello-async-over-sync")]
         public async Task<string> HelloAsyncOverSync()
         {
             await Task.Run(() => Thread.Sleep(2000));

@@ -15,6 +15,10 @@ namespace Logging
     {
         public static void Main(string[] args)
         {
+            Log.Logger = new LoggerConfiguration()
+            .WriteTo.Seq("http://localhost:5341")
+            .CreateLogger();
+
             BuildWebHost(args).Run();
         }
 
