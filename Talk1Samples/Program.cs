@@ -22,7 +22,7 @@ namespace Talk1Samples
                 .UseStartup<Startup>()
                 .ConfigureLogging(logging =>
                 {
-                    logging.SetMinimumLevel(LogLevel.Error);
+                    logging.SetMinimumLevel(LogLevel.Warning);
                 })
                 .UseUrls("http://*:5067")
                 .Build();

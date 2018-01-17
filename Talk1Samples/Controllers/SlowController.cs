@@ -12,13 +12,13 @@ namespace Talk1Samples
         [Route("/slow-async")]
         public Task SlowAsync()
         {
-            return Task.Delay(TimeSpan.FromMinutes(3));
+            return Task.Delay(TimeSpan.FromSeconds(90));
         }
 
         [Route("/slow-sync")]
         public void SlowSync()
         {
-            Thread.Sleep(TimeSpan.FromMinutes(3));
+            Thread.Sleep(TimeSpan.FromMinutes(90));
         }
     }
 }
